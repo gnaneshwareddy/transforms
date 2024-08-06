@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgba(165, 65, 42, 0.844);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+        }
+        .container {
+            width: 400px;
+           
+            text-align: center;
+        }
+        button {
+            background-color: orange;
+            color: black;
+          
+            margin: 20px 10px;
+        }
+        .container > .one:hover ~ img{
+            transform: translate(50px,-30px);
+            transition: all 5s ease;
+        }
+        .container > .two:hover ~ img{
+            transform: rotate(4000deg);
+            transition: all 4s ease-in-out;
+        }
+        .container > .three:hover ~ img{
+            transform: scale(1.2) rotate(10deg);
+        
+            transition: all 3s ease-in;
+        }
+        .container > .four:hover ~ img{
+            transform: skew(60deg,-30deg) ;
+        
+            transition: all 5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="one">TRANSLATE</button>
+        <button class="two">ROTATE</button>
+        <button class="three">SCALE</button>
+        <button class="four">SKEW</button>
+        <img src="https://th.bing.com/th/id/R.93c5b2358cf69019eddcfa66cf46699e?rik=UnaogT63HLk%2bGg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fstar-png-star-png-image-2156.png&ehk=AJQgQm6ZGqwEuux%2bxAFNajh0aeZJJBf4g%2faJOxRc8NM%3d&risl=&pid=ImgRaw&r=0" alt="" width="200px" id="STAR">
+    </div>
+</body>
+</html>
